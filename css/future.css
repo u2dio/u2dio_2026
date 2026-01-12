@@ -1,0 +1,142 @@
+.logo {
+    width: 480px;
+    margin: auto;
+    
+}
+
+.font {
+    font-family: 'Nanum Gothic',
+}
+
+
+body {
+    background: white; 
+    width: 480px;
+    margin: auto;
+}
+
+
+h2 {
+    color:orange;
+    text-align: center;
+    line-height: center; 
+}
+
+#main, #result {
+    width: 480px;
+    border-radius: 10px;
+    padding: 20px 15px;
+    background-color: white;
+    font-size:24px;         /*처음페이지(이름, 년, 월, 일) 리설트페이지(내용) 텍스트 크기*/
+    line-height: 200%;
+}
+
+#name, #favNum, #favColor, #fda  {
+    width: 280px;
+    height: 45px;
+    border: 2px solid #f9b334;
+    background-color: rgb(247, 250, 211);
+    padding-left: 10px;
+    color: orange;
+    font-size:18px;
+}
+
+#name:focus, #favColor:focus, #favNum:focus, #fda:focus {
+    border: 2px solid orange;
+    padding-left: 10px;    /*인풋 내부 텍스트 간격*/
+    color: orange;
+    font-size:18px;
+    
+}
+
+input::placeholder {
+    color: #f9b334;
+}
+
+
+
+#submit , #details {
+    display: block;
+    width: 480px;
+    margin: auto;
+    border:0;
+    border-radius: 30px;
+    color: #fff;
+    margin: auto;
+    padding: 0px 10px;
+    width: 250px;
+    background-color: orange;    /*처음 페이지 '테스트' 버튼 크기*/
+    font-size: 26px;
+    line-height: 220%;     
+    text-align: center;
+}
+
+
+
+#intro {
+    width: 480px;
+    color:orange;
+    font-size:30px;             /*리설트 페이지 상단 제목 텍스트 크기*/
+    text-align: center;
+}
+
+
+#col, #num, #ddd {
+    width: 480px;
+    color:gray;              /*리설트 페이지 텍스트 크기*/
+    font-size:28px;
+    line-height: 58px; 
+    font-weight: bold;         
+    text-align: left;
+}
+
+ 
+#bcolor, #bnum, #bda {
+    color:orange;
+    font-size:18px;   
+}
+
+
+#resultImg {
+    display: none;
+    width: 480px;
+    margin: auto;
+}
+
+
+#retry-btn{
+    display: block;
+    margin: auto;
+    border:0;
+    border-radius: 30px;
+    color: #fff;
+    padding: 0px 10px;
+    width: 250px;
+    background-color: orange;     /* 다시하기 버튼 */
+    font-size: 26px;
+    line-height: 220%;     
+    text-align: center;
+}
+
+#share-btn{
+    display: block;
+    margin: auto;
+    border:0;
+    border-radius: 30px;
+    color: #fff;
+    padding: 0px 10px;
+    width: 250px;
+    background-color: orange;   /* 공유하기 버튼 */
+    font-size: 26px;
+    line-height: 220%;     
+    text-align: center;
+}
+
+#end {
+    display: block;
+    margin: auto;
+    width: 480px;
+    text-align: center;
+    font-size:16px;
+    color: orange;             /* end, footer 설정*/
+}

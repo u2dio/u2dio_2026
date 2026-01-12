@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"></html>
+<html>
+    <head>
+      <title>나의 미래 엿보기 테스트</title>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">  
+      <meta name="viewport" content="width=device-width, initial-scale=0.8">       
+      <img class="logo" src="https://u2dio.com/img/logo_future.png" alt="나의 미래 엿보기 테스트">
+      <meta name="description" content="태어난 생년월일로 5년 후, 내 미래를 살짝 엿보는 썸잉 나의 미래 엿보기 테스트 ">
+      <!-- sns OpenGraph tag --> 
+      <meta property="og:type" content="u2dio.com" />
+      <meta property="og:site_name" content="나의 미래 엿보기 테스트" />  
+      <meta property="og:title" content="나의 미래 엿보기 테스트"/>  
+      <meta property="og:description" content="나의 미래 엿보기 테스트 썸잉 5년후 내 미래 엿보기" />
+      <meta property="og:image" content="https://u2dio.com/img/logo_future.png"/>
+      <meta property="og:url" content="https://u2dio.com/mind/future/future.html"/>
+      <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+      <link rel="stylesheet" href="./css/future.css" type="text/css"></style>
+      <script src="./js/future.js"></script>
+      <script src="./js/data.js"></script>
+             
+    </head>
+    
+    <body>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4377043398001341"
+        crossorigin="anonymous"></script>
+        <!-- 2024_480x200 -->
+        <ins class="adsbygoogle"
+        style="display:inline-block;width:480px;height:200px"
+        data-ad-client="ca-pub-4377043398001341"
+        data-ad-slot="3871574002"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    
+    <h2>앞으로 5년 후, 나의 미래 엿보기 테스트!!</h2>
+    <div id="main">
+    <p>
+      <b><span style = "font-size:20px;  color: orange;">본인 이름 : </span></b><input id="name" class="namebox" type="text" placeholder="입력하세요"><br><br>
+            
+      <b><span style = "font-size:20px;  color: orange;">태어난 해 : </span></b>
+      <select id = "favColor" style="width:295px; height:50px;">
+      <option value="선택">선택하세요</option>
+      <option value="🕐">XXX0년 생</option>
+      <option value="🕑">XXX1년 생</option>
+      <option value="🕒">XXX2년 생</option>
+      <option value="🕓">XXX3년 생</option>
+      <option value="🕔">XXX4년 생</option>
+      <option value="🕕">XXX5년 생</option>
+      <option value="🕖">XXX6년 생</option>
+      <option value="🕗">XXX7년 생</option>
+      <option value="🕘">XXX8년 생</option>
+      <option value="🕙">XXX9년 생</option>
+      </select> <br><br>
+
+      <b><span style = "font-size:20px;  color: orange;">태어난 월 : </span></b>
+      <select id = "favNum" style="width:295px; height:50px;">
+      <option value="선택">선택하세요</option>
+      <option value="🕐">01월</option>
+      <option value="🕑">02월</option>
+      <option value="🕒">03월</option>
+      <option value="🕓">04월</option>
+      <option value="🕔">05월</option>
+      <option value="🕕">06월</option>
+      <option value="🕖">07월</option>
+      <option value="🕗">08월</option>
+      <option value="🕘">09월</option>
+      <option value="🕙">10월</option>
+      <option value="🕚">11월</option>
+      <option value="🕛">12월</option>
+      </select> <br><br>
+
+      <b><span style = "font-size:20px;  color: orange;">태어난 일 : </span></b>
+      <select id = "fda" style="width:295px; height:50px;" onchange="bgcolor()">
+      <option value="선택">선택하세요</option>
+      <option value="🕐">1일</option>
+      <option value="🕑">2일</option>
+      <option value="🕒">3일</option>
+      <option value="🕓">4일</option>
+      <option value="🕔">5일</option>
+      <option value="🕕">6일</option>
+      <option value="🕖">7일</option>
+      <option value="🕗">8일</option>
+      <option value="🕘">9일</option>
+      <option value="🕙">10일</option>
+      <option value="🕚">11일</option>
+      <option value="🕛">12일</option>
+      <option value="🕜">13일</option>
+      <option value="🕝">14일</option>
+      <option value="🕟">15일</option>
+      <option value="🕠">16일</option>
+      <option value="🕡">17일</option>
+      <option value="🕢">18일</option>
+      <option value="🕣">19일</option>
+      <option value="🕣">20일</option>
+      <option value="🕤">21일</option>
+      <option value="🕥">22일</option>
+      <option value="🕦">23일</option>
+      <option value="🕧">24일</option>
+      <option value="⏲">25일</option>
+      <option value="📈">26일</option>
+      <option value="📉">27일</option>
+      <option value="⏱">28일</option>
+      <option value="⏰">29일</option>
+      <option value="⌚">30일</option>
+      <option value="📆">31일</option>
+      </select><br>
+</div>
+
+<div id="result" style="display:none;">
+<margin: auto></margin>
+<p id="intro"></p>
+<p id="col"></p>
+<p id="num"></p>
+<img id="resultImg d1" src=""></p>
+</div>
+
+<script>
+var favColor = document.getElementById('favColor');
+var favNum = document.getElementById('favNum');
+var fda = document.getElementById('fda');
+//var bcolor = favColor.options[favColor.selectedIndex].value;
+
+function bgcolor() {
+}
+
+function removeSpace(word) {
+    var space=0;
+    var newWord ="";
+    for (i=0;i<word.length;i++) {
+        if (word[i]==" "){
+            if (space==1){continue;}
+            space=1;
+        }
+        else{space =0;}
+        newWord += word[i];
+    }
+  //  document.write(newWord);
+    return newWord;
+}
+
+
+function Func() {
+    if (removeSpace(document.getElementById('name').value)=== " " || document.getElementById('name').value ==="") {
+        alert("이름을 입력해 주세요!")
+    }
+    else if (favColor.options[favColor.selectedIndex].value === "선택") {
+        alert("태어난 해을 선택해 주세요")
+    }
+    else if (favNum.options[favNum.selectedIndex].value=== "선택") {
+        alert("태어난 월을 선택해 주세요")
+    }
+    else if (fda.options[fda.selectedIndex].value === "선택") {
+        alert("태어난 일을 선택해 주세요")
+    }
+    
+    else {
+        func()
+    }
+}
+
+function func() {
+  var name= document.getElementById('name').value ;
+  var bcolor = favColor.options[favColor.selectedIndex].value;
+  var bnum = favNum.options[favNum.selectedIndex].value;
+  var bda = fda.options[fda.selectedIndex].value;
+  //name = removeSpace(name);
+    
+  document.body.style.backgroundColor = bcolor;
+  
+  document.getElementById("intro").style.color = bcolor;
+  document.getElementById('main').style.display="none";
+  document.getElementById('result').style.display="block";
+    
+  document.getElementById("intro").innerHTML= ""+ name + " _님의 미래는<br>"
+  document.getElementById("resultImg d1").src = "https://u2dio.com/img/bg_future.jpg"
+  document.getElementById("col").innerHTML = "" + "🎁🎁🎁🎁🎁🎁🎁🎁🎁🎁🎁🎁🎁<br><br>" + bnum + numbers[bnum] +"<br>" + bda + days[bda] + "<br><br>🎁🎁🎁🎁🎁🎁🎁🎁🎁🎁🎁🎁🎁<br>"; 
+  document.getElementById('submit').style.display="none";
+
+
+if (bcolor=="White") {
+  document.getElementById("intro").style.color = "#888";
+  document.getElementById("result").style.backgroundColor = "#eee";
+ }
+else if (bcolor=="Black") {
+  document.getElementById("title").style.color = "#fff";
+ }
+} 
+
+function detailed() {
+var d1 = document.getElementById("d1");
+var d2 = document.getElementById("d2");
+var d3 = document.getElementById("d3");
+d1.style.display="block";
+d2.style.display="block";
+d3.style.display="block";
+
+document.getElementById("details").style.display="none";
+}
+
+</script>
+<br>  
+<div>
+<button onclick="Func()" id="submit">미래 엿보기</button><br> 
+<button type="button" id="retry-btn" onclick="window.location.href=''">다시 테스트</button>
+</div> 
+
+<br><br><br>   
+<!-- SNS share buttons --> 
+<div style="width: 100%; text-align: center; margin-bottom: 50px;"> 
+    <a href="https://u2dio.com" target="_self"><img src="https://u2dio.com/img/ui_home.png"></a>&nbsp;    
+    <a href="#" target="_blank" onclick="javascript:window.open( 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent( document.URL )+'&t=' + encodeURIComponent( document.title ), 'jb-share-window-facebook', 'menubar=no, toolbar=no, resizable=yes, scrollbars=yes, width=600, height=600' ); return false;" title="페이스북"><img src="https://u2dio.com/img/logo_facebook.png" alt="facebook"></a>&nbsp;
+    <a href="#" target="_blank" onclick="javascript:window.open( 'https://twitter.com/intent/tweet?text=' + encodeURIComponent( document.title ) + '%20(' + encodeURIComponent( document.URL ) + ')', 'jb-share-window-google-plus', 'menubar=no, toolbar=no, resizable=yes, scrollbars=yes, width=600, height=600' ); return false;" title="트위터"><img src="https://u2dio.com/img/logo_twitter.png" alt="twitter"></a>&nbsp;
+    <a href="#" target="_blank" onclick="javascript:window.open( 'https://instagram.com/nemo_6204?url=' + encodeURIComponent( document.URL ), 'jb-share-window-google-plus', 'menubar=no, toolbar=no, resizable=yes, scrollbars=yes, width=600, height=600' ); return false;" title="인스타그램"><img src="https://u2dio.com/img/logo_instagram.png" alt="instagram"></a>&nbsp;
+    <a href="#" target="_blank" onclick="javascript:window.open( 'https://share.naver.com/web/shareView.nhn?url=' + encodeURIComponent( document.URL ) + '&title=' + encodeURIComponent( document.title ), 'jb-share-window-naver', 'menubar=no, toolbar=no, resizable=yes, scrollbars=yes, width=600, height=600' ); return false;" title="네이버"><img src="https://u2dio.com/img/logo_naver.png" alt="naver"></a>&nbsp;
+    <a href="#" target="_blank" onclick="javascript:window.open( 'https://band.us/plugin/share?url=' + encodeURIComponent(document.URL) + '&title=' + encodeURIComponent(document.title), 'naversharedialog', 'menubar=no, toolbar=no, resizable=yes, scrollbars=yes, height=600, width=600' ); return false;" title="밴드"><img src="https://u2dio.com/img/logo_band.png" alt="band"></a>&nbsp;
+    <a href="#" target="_blank" onclick="javascript:window.open( 'https://story.kakao.com/share?url=' + encodeURIComponent( document.URL ), 'jb-share-window-kakostory', 'menubar=no, toolbar=no, resizable=yes, scrollbars=yes, width=600, height=600' ); return false;" title="카카오스토리"><img src="https://u2dio.com/img/logo_kakaostory.png" alt="kakaostory"></a>&nbsp;
+    <a href="javascript:shareKatalk()" title="카카오톡"><img src="https://u2dio.com/img/logo_kakao.png" alt="kakaoTalk"></a>
+<br><br><br>
+<hr><br><br>
+<div id= "end" ><br>
+    <a href="https://u2dio.com/mind/mbti10s/mbti10s.html" target="_self"><img src="https://u2dio.com/wp-content/uploads/2022/11/ad_mbtii.png"></a><br><br>
+    <a href="https://u2dio.com/mind/love_test/test.html" target="_self"><img src="https://u2dio.com/wp-content/uploads/2022/11/ad_love.png"></a><br><br>
+    <a href="https://u2dio.com/game/mathq/mathq.html" target="_self"><img src="https://u2dio.com/wp-content/uploads/2022/11/ad_mathq.png"></a><br><br><br><br>
+    
+<footer>U2DIO의 콘텐츠는 재미와 엔터테인먼트 목적으로 제공합니다!<br><p>© u2dio.com</footer><br>
+</div> 
+
+</body>
+</html>
